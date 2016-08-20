@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/activity_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:alpha="1"
+            android:gravity="end"
+            android:padding="4dp"
+            android:text="Record Shoot" />
+
+        <TextView
+            android:id="@+id/training_clickable_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:alpha="1"
+            android:gravity="end"
+            android:padding="4dp"
+            android:text="Timer Training" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:alpha="1"
+            android:gravity="end"
+            android:padding="4dp"
+            android:text="Team Timer Training" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:alpha="1"
+            android:gravity="end"
+            android:padding="4dp"
+            android:text="Shop" />
+
+        <View
+            android:id="@+id/movie_detail_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:alpha="1" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:alpha="1"
+            android:gravity="end"
+            android:padding="4dp"
+            android:text="About" />
+
+    </LinearLayout>
+
+</FrameLayout>

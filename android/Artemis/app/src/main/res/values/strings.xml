@@ -1,0 +1,29 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">Artemis</string>
+    <string name="session_default_nshots_key" translatable="false">Session default n shots</string>
+    <string name="session_default_knock_interval_key">Session default knock interval</string>
+    <string name="session_default_draw_interval_key">Session default draw interval</string>
+    <string name="session_default_relax_interval_key">Session Default Relax Interval</string>
+    <string name="session_default_draw_var_key">Session Default Training Variability</string>
+
+    <string name="session_default_shot_interval">Session Default Shot Interval</string>
+    <string name="draw_var_interval_non_zero_var_format">+0 to <xliff:g id="max_var_time">%1$d</xliff:g> secs.</string>
+    <string name="draw_var_interval_zero_var">+0 secs.</string>
+    <string name="timer_text_format"><xliff:g id="time">%1$l</xliff:g> secs.</string>
+    <string name="nocking_state_friendly_name">Nock</string>
+    <string name="draw_state_friendly_name">Draw and Hold</string>
+    <string name="shoot_state_friendly_name">Shoot</string>
+    <string name="rest_state_friendly_name">Rest</string>
+    <string name="control_panel_shots_title">Shots:</string>
+    <string name="control_panel_shots_unit_type">shots.</string>
+    <string name="control_panel_nock_time_title">Nock Time:</string>
+    <string name="control_panel_interval_unit_type">secs.</string>
+    <string name="control_panel_draw_time_title">Draw Time:</string>
+    <string name="control_panel_max_draw_variability_title">Max Draw Variability:</string>
+    <string name="factory_default_draw_variability">+0 secs.</string>
+    <string name="control_panel_shoot_time_title">Shoot Time:</string>
+    <string name="control_panel_rest_time_title">Rest Time:</string>
+    <string name="archery_banner">Archery Target with arrow in the bulls-eye</string>
+    <string name="additional_services_button_content_description">Additional Services Button</string>
+    <string name="session_additional_services_add_notes">Notes</string>
+</resources>

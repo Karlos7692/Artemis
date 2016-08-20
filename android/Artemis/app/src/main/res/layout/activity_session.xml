@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_session"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:animateLayoutChanges="true"
+    android:windowSoftInputMode="adjustPan"
+    tools:context="com.elitesportsdevelopers.artemis.SessionActivity">
+
+    <ImageView
+        android:id="@+id/archery_banner"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:background="@drawable/archery_stock3"
+        android:contentDescription="@string/archery_banner" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:alpha="0.95"
+            android:background="@drawable/white_layer"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/session_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_layer"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:weightSum="12">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+                <Button
+                    android:id="@+id/session_pause_stop_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:enabled="false"
+                    android:text="Pause"
+                    android:textColor="@color/disabledGrey" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+
+                <Button
+                    android:id="@+id/session_start_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:enabled="true"
+                    android:text="Start"
+                    android:textColor="@color/startResetColor" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="280dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/additional_services"
+        layout="@layout/fragment_additional_services"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:focusable="true" >
+    </include>
+
+    <ImageButton
+        android:id="@+id/session_additional_services_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/additional_services_button"
+        android:contentDescription="@string/additional_services_button_content_description" />
+</FrameLayout>

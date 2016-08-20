@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorLight">#4C9EFF</color>
+    <color name="colorPrimary">#266CBF</color>
+    <color name="colorPrimaryDark">#003A7F</color>
+    <color name="colorAccent">#D51919</color>
+    <color name="startResetColor">#00C853</color>
+    <color name="disabledGrey">#D3D3D3</color>
+    <color name="pauseStopColor">#D50000</color>
+</resources>

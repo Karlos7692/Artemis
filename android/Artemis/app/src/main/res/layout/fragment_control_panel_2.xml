@@ -1,0 +1,284 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_layer"
+    android:paddingLeft="16dp"
+    android:paddingStart="16dp"
+    android:paddingRight="16dp"
+    android:paddingEnd="16dp"
+    android:columnCount="12"
+    tools:context="com.elitesportsdevelopers.artemis.SessionControlPanelFragment">
+
+    <LinearLayout
+        android:layout_row="0"
+        android:id="@+id/control_panel_n_shots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:weightSum="12">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.75"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/control_panel_shots_title"
+            android:layout_weight="4" />
+
+        <!-- TODO For all number input types disable comma and fullstop -->
+
+        <com.elitesportsdevelopers.artemis.views.ControlPanelEditText
+            android:id="@+id/control_paned_n_shots_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="2"
+            android:focusable="true"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/control_panel_shots_unit_type"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_row="1"
+        android:layout_column="0"
+        android:id="@+id/control_panel_nock_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:weightSum="12">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.75"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/control_panel_nock_time_title"
+            android:layout_weight="4"/>
+
+        <com.elitesportsdevelopers.artemis.views.ControlPanelEditText
+            android:id="@+id/control_panel_nock_time_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="2"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/control_panel_interval_unit_type"
+            android:layout_weight="2"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/control_panel_draw_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:orientation="horizontal"
+        android:weightSum="12">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.75"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/control_panel_draw_time_title"
+            android:layout_weight="4" />
+
+        <com.elitesportsdevelopers.artemis.views.ControlPanelEditText
+            android:id="@+id/control_panel_draw_time_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="2"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/control_panel_interval_unit_type"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/control_panel_draw_var_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:orientation="horizontal"
+        android:weightSum="12">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.75"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="@string/control_panel_max_draw_variability_title" />
+
+        <!-- Todo clean up seek bar defaults -->
+        <TextView
+            android:id="@+id/control_panel_max_var_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:text="@string/factory_default_draw_variability"
+            android:textSize="16sp"
+            android:textColor="@android:color/primary_text_light"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/control_panel_draw_var"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:weightSum="12">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.75"/>
+
+        <SeekBar
+            android:id="@+id/control_panel_draw_var_seek_bar"
+            android:layout_width="0dp"
+            android:paddingLeft="8dp"
+            android:paddingStart="8dp"
+            android:paddingRight="8dp"
+            android:paddingEnd="8dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/control_panel_shoot_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:orientation="horizontal"
+
+        android:weightSum="12">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.75"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/control_panel_shoot_time_title"
+            android:layout_weight="4" />
+
+        <com.elitesportsdevelopers.artemis.views.ControlPanelEditText
+            android:id="@+id/control_panel_shot_time_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="2"
+            android:focusableInTouchMode="true"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/control_panel_interval_unit_type"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/control_panel_rest_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:orientation="horizontal"
+        android:weightSum="12">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.75"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/control_panel_rest_time_title"
+            android:layout_weight="4" />
+
+        <com.elitesportsdevelopers.artemis.views.ControlPanelEditText
+            android:id="@+id/control_panel_rest_time_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="2"
+            android:focusableInTouchMode="true"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/control_panel_interval_unit_type"
+            android:layout_weight="2"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+</GridLayout>

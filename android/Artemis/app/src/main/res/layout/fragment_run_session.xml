@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_layer"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:padding="16dp"
+    android:alpha="0.80"
+    android:gravity="center"
+    android:keepScreenOn="true">
+    
+    <TextView
+        android:id="@+id/session_run_shot_counter_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:text="#Shots"/>
+
+    <TextView
+        android:id="@+id/session_run_state_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:text="State" />
+
+    <TextView
+        android:id="@+id/session_run_time_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time:"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+
+        android:textSize="24sp" />
+</LinearLayout>
